@@ -32,6 +32,7 @@ The code comprises several essential components:
   - `constraint_propagation`: Propagates constraints after assigning a value to a cell.
   - `update_due_to_backtracking`: Reverts the board state due to backtracking.
   - `find_most_constrained_empty_cell`: Finds the cell with the least options for value assignment.
+  - `generate_domains`: Generates possible value domains for empty cells. (It does so by finding combinations that sum up to the desired value (with recursive method))
   - Other helper functions for block identification and manipulation.
 
 - `solve_kakuro`: Main function implementing the solver using backtracking and constraint propagation.
